@@ -1,0 +1,20 @@
+server:
+  port: 8443
+
+spring:
+  # ?? Thymeleaf ????
+  thymeleaf:
+    cache: false
+
+  devtools:
+    restart:
+      # ????????????
+      additional-paths: src/main/java
+      # ?????????????
+      exclude: static/**,public/**
+
+  redis:
+    database: 15
+    host: 192.168.1.39
+    port: 6379
+    password: Redis!$13456
