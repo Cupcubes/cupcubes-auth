@@ -2,15 +2,15 @@ server:
   port: 8443
 
 spring:
-  # ?? Thymeleaf ????
+  # Thymeleaf缓存关闭
   thymeleaf:
     cache: false
 
   devtools:
     restart:
-      # ????????????
+      # 目录中的源代码发生更改时， 重新启动应用程序
       additional-paths: src/main/java
-      # ?????????????
+      # 目录中的源代码发生更改时， 不需要重新启动应用程序
       exclude: static/**,public/**
 
   redis:
